@@ -22,3 +22,7 @@ exports.manage_post = function(post, cb) {
 		cb(0, null);
 	}
 };
+
+//exports.updatetime = -1;
+exports.title = 'Terminal';
+exports.columns = 6;
