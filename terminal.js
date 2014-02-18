@@ -1,7 +1,7 @@
 function execute(cmd, cb) {
 	var util = require('util');
 	var exec = require('child_process').exec;
-	exec(cmd, function (err, stdout, stderr) {
+	exec(cmd, function (err, stdout) {
 		cb(stdout);
 	});
 }
@@ -23,6 +23,6 @@ exports.manage_post = function(post, cb) {
 	}
 };
 
-//exports.updatetime = -1;
+exports.updatetime = -1;
 exports.title = 'Terminal';
 exports.columns = 6;
